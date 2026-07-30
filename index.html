@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accord Party Oyo State 2027 — Volunteer With Us</title>
+<meta name="description" content="Join the Accord Party Oyo State 2027 campaign. Learn our manifesto, meet the candidates, and register as a volunteer.">
+
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 100 100" width="64" height="64" aria-hidden="true">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="var(--color-gold)" stroke-width="4" stroke-linecap="round" stroke-dasharray="180 80"/>
+    </svg>
+  </div>
+  <p class="loader-text">Preparing the ballot&hellip;</p>
+</div>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Navigation -->
+<header class="site-header" id="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="#home" class="brand">
+      <img src="images/accord1.png" alt="Accord Party emblem" width="40" height="40">
+      <span class="brand-text">Accord&nbsp;Party <em>Oyo 2027</em></span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#candidates" class="nav-link">Candidates</a></li>
+      <li><a href="#manifesto" class="nav-link">Manifesto</a></li>
+      <li><a href="#volunteer" class="nav-link nav-link--cta">Volunteer</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg" style="background-image:url('images/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow reveal">Ibadan North &middot; Oyo State &middot; 2027 General Election</p>
+      <h1 class="hero-title reveal">A Fair Accord <br> for Every Ward.</h1>
+      <p class="hero-tagline reveal">Education. Healthcare. Jobs. Security. One ticket, one promise — service that reaches every local government in Oyo State.</p>
+      <div class="hero-actions reveal">
+        <a href="#volunteer" class="btn btn--gold">Become a Volunteer</a>
+        <a href="#about" class="btn btn--ghost">Learn More</a>
+      </div>
+
+      <div class="hero-countdown reveal" aria-label="Countdown to the 2027 election">
+        <p class="countdown-label">Election Day Countdown</p>
+        <div class="countdown-grid" id="countdown">
+          <div class="countdown-cell"><span class="countdown-num" id="cd-days">00</span><span class="countdown-unit">Days</span></div>
+          <div class="countdown-cell"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-unit">Hours</span></div>
+          <div class="countdown-cell"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-unit">Mins</span></div>
+          <div class="countdown-cell"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-unit">Secs</span></div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow reveal">Who We Are</p>
+      <h2 class="section-title reveal">A campaign built on service, not slogans.</h2>
+      <p class="section-lead reveal">The Accord Party's Oyo State ticket is grounded in one idea: government should show up where people actually live — in the wards, the markets, the clinics, and the classrooms.</p>
+
+      <div class="card-grid card-grid--4">
+        <article class="info-card reveal">
+          <div class="info-card-icon" aria-hidden="true">&#127894;</div>
+          <h3>Our Mission</h3>
+          <p>To deliver accountable, people-first governance across all 33 local government areas of Oyo State.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="info-card-icon" aria-hidden="true">&#128065;</div>
+          <h3>Our Vision</h3>
+          <p>An Oyo State where every ward has functioning schools, clinics, roads, and real economic opportunity.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="info-card-icon" aria-hidden="true">&#9878;&#65039;</div>
+          <h3>Core Values</h3>
+          <p>Integrity, transparency, inclusion, and consistent presence in the communities we hope to serve.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="info-card-icon" aria-hidden="true">&#129309;</div>
+          <h3>Community Service</h3>
+          <p>Regular town halls, ward-level outreach, youth clinics, and skills workshops ahead of 2027.</p>
+        </article>
+      </div>
+
+      <div class="stat-strip reveal">
+        <div class="stat"><span class="stat-num" data-count="33">0</span><span class="stat-label">Local Govts Reached</span></div>
+        <div class="stat"><span class="stat-num" data-count="120">0</span><span class="stat-label">Ward Meetings Held</span></div>
+        <div class="stat"><span class="stat-num" data-count="4500">0</span><span class="stat-label">Registered Volunteers</span></div>
+        <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label">Manifesto Pillars</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Candidates -->
+  <section class="section section--tint" id="candidates">
+    <div class="container">
+      <p class="eyebrow reveal">The Ticket</p>
+      <h2 class="section-title reveal">Meet the candidates.</h2>
+      <p class="section-lead reveal">Two names, one accord — running together for Oyo State in 2027.</p>
+
+      <div class="ticket">
+        <article class="ticket-card reveal">
+          <span class="ticket-number">01</span>
+          <div class="ticket-photo">
+            <img src="images/mascot.jpeg" alt="Portrait of Olaleye Kammel Olatunji (MASCOT), candidate for Federal House of Representatives" loading="lazy">
+          </div>
+          <div class="ticket-body">
+            <h3>Olaleye Kammel Olatunji (MASCOT)</h3>
+            <p class="ticket-role">Federal House of Representatives</p>
+            <p class="ticket-meta">Ibadan North Federal Constituency &middot; 2027</p>
+            <p class="ticket-bio">Olaleye Kammel Olatunji (MASCOT) has spent over a decade organizing at the grassroots level across Ibadan North, working directly with market associations, youth groups, and community elders to identify practical solutions to everyday problems.</p>
+            <h4>Experience</h4>
+            <p>A background in public policy advocacy and constituency-level project coordination, with hands-on experience translating community concerns into legislative priorities.</p>
+            <h4>Vision</h4>
+            <p>A federal constituency where representation means visible, measurable delivery — not just attendance in Abuja.</p>
+            <h4>Community Impact</h4>
+            <p>Led youth empowerment drives and supported small-business owners with market infrastructure advocacy across Ibadan North wards.</p>
+          </div>
+        </article>
+
+        <div class="ticket-divider" aria-hidden="true"></div>
+
+        <article class="ticket-card reveal">
+          <span class="ticket-number">02</span>
+          <div class="ticket-photo">
+            <img src="images/oriyomi.jpeg" alt="Portrait of Oriyomi Hamzat Abdul Rahmon, candidate for Governor of Oyo State" loading="lazy">
+          </div>
+          <div class="ticket-body">
+            <h3>Oriyomi Hamzat Abdul Rahmon</h3>
+            <p class="ticket-role">Governor, Oyo State</p>
+            <p class="ticket-meta">Accord Party &middot; 2027</p>
+            <p class="ticket-bio">Oriyomi Hamzat Abdul Rahmon brings a career spanning public administration and private-sector enterprise to the Accord Party's governorship bid, with a focus on institution-building over personality politics.</p>
+            <h4>Leadership Experience</h4>
+            <p>Years of leadership across community development initiatives and organizational management, with an emphasis on structured, accountable delivery.</p>
+            <h4>Vision</h4>
+            <p>A modern, well-run Oyo State where public institutions work for citizens first, and prosperity is shared across every senatorial district.</p>
+            <h4>Community Achievements</h4>
+            <p>Championed education and healthcare access initiatives and mentorship programs for young professionals and entrepreneurs across the state.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="section" id="manifesto">
+    <div class="container">
+      <p class="eyebrow reveal">The Plan</p>
+      <h2 class="section-title reveal">Ten pillars for Oyo State.</h2>
+      <p class="section-lead reveal">Our manifesto is organized around the priorities Oyo State residents raise most often at ward meetings.</p>
+
+      <div class="card-grid card-grid--5" id="manifesto-grid">
+        <!-- populated by app.js for consistency, static fallback below -->
+        <article class="pillar-card reveal"><span class="pillar-index">01</span><h3>Education</h3><p>Rebuilding public schools and expanding scholarship access.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">02</span><h3>Healthcare</h3><p>Functional primary healthcare centers in every ward.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">03</span><h3>Youth Empowerment</h3><p>Skills acquisition hubs and start-up support for young people.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">04</span><h3>Agriculture</h3><p>Modernizing farm access roads and produce storage.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">05</span><h3>Technology</h3><p>Digital literacy programs and public-service digitization.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">06</span><h3>Infrastructure</h3><p>Sustained investment in roads, drainage, and public utilities.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">07</span><h3>Security</h3><p>Community policing partnerships and rapid-response coordination.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">08</span><h3>Economic Development</h3><p>Support for small businesses, markets, and local industry.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">09</span><h3>Women Empowerment</h3><p>Access to capital, healthcare, and leadership opportunities.</p></article>
+        <article class="pillar-card reveal"><span class="pillar-index">10</span><h3>Employment</h3><p>Public-private partnerships to create sustainable local jobs.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Registration -->
+  <section class="section section--tint" id="volunteer">
+    <div class="container">
+      <p class="eyebrow reveal">Join Us</p>
+      <h2 class="section-title reveal">Register as a volunteer.</h2>
+      <p class="section-lead reveal">Tell us about yourself. We'll reach out with ward-level volunteer opportunities that match your skills and availability.</p>
+
+      <form class="reg-form reveal" id="volunteer-form" novalidate>
+
+        <fieldset class="form-fieldset">
+          <legend>Personal Details</legend>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+              <span class="field-error" id="err-fullName" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="gender">Gender <span class="req">*</span></label>
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+              </select>
+              <span class="field-error" id="err-gender" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="dob">Date of Birth <span class="req">*</span></label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="field-error" id="err-dob" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="age">Age <span class="req">*</span></label>
+              <input type="number" id="age" name="age" min="16" max="120" readonly aria-describedby="age-hint" required>
+              <span class="field-hint" id="age-hint">Calculated automatically from date of birth</span>
+              <span class="field-error" id="err-age" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="field-error" id="err-email" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 08012345678" required>
+              <span class="field-error" id="err-phone" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="whatsapp">WhatsApp Number <span class="req">*</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. 08012345678" required>
+              <span class="field-error" id="err-whatsapp" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="occupation">Occupation <span class="req">*</span></label>
+              <input type="text" id="occupation" name="occupation" required>
+              <span class="field-error" id="err-occupation" role="alert"></span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Location</legend>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="state">State <span class="req">*</span></label>
+              <input type="text" id="state" name="state" value="Oyo" required>
+              <span class="field-error" id="err-state" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="lga">Local Government <span class="req">*</span></label>
+              <select id="lga" name="lga" required>
+                <option value="">Select local government</option>
+                <option>Afijio</option><option>Akinyele</option><option>Atiba</option><option>Atisbo</option>
+                <option>Egbeda</option><option>Ibadan North</option><option>Ibadan North-East</option>
+                <option>Ibadan North-West</option><option>Ibadan South-East</option><option>Ibadan South-West</option>
+                <option>Ibarapa Central</option><option>Ibarapa East</option><option>Ibarapa North</option>
+                <option>Ido</option><option>Irepo</option><option>Iseyin</option><option>Itesiwaju</option>
+                <option>Iwajowa</option><option>Kajola</option><option>Lagelu</option><option>Ogbomosho North</option>
+                <option>Ogbomosho South</option><option>Ogo Oluwa</option><option>Olorunsogo</option><option>Oluyole</option>
+                <option>Ona Ara</option><option>Orelope</option><option>Ori Ire</option><option>Oyo East</option>
+                <option>Oyo West</option><option>Saki East</option><option>Saki West</option><option>Surulere</option>
+              </select>
+              <span class="field-error" id="err-lga" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="ward">Ward <span class="opt">(optional)</span></label>
+              <input type="text" id="ward" name="ward">
+            </div>
+
+            <div class="form-field">
+              <label for="country">Country <span class="req">*</span></label>
+              <input type="text" id="country" name="country" value="Nigeria" required>
+              <span class="field-error" id="err-country" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="address">Residential Address <span class="req">*</span></label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+            <span class="field-error" id="err-address" role="alert"></span>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+          <legend>Volunteer Details</legend>
+
+          <div class="form-field form-field--full">
+            <label>Do you have a PVC? <span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-pill"><input type="radio" name="pvc" value="Yes" required> Yes</label>
+              <label class="radio-pill"><input type="radio" name="pvc" value="No"> No</label>
+            </div>
+            <span class="field-error" id="err-pvc" role="alert"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="skills">Skills <span class="req">*</span></label>
+            <textarea id="skills" name="skills" rows="2" placeholder="e.g. Public speaking, social media, event coordination" required></textarea>
+            <span class="field-error" id="err-skills" role="alert"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="reason">Why do you want to volunteer? <span class="req">*</span></label>
+            <textarea id="reason" name="reason" rows="3" required></textarea>
+            <span class="field-error" id="err-reason" role="alert"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label>Available Days <span class="req">*</span></label>
+            <div class="checkbox-grid" id="available-days">
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Monday">Mon</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Tuesday">Tue</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Wednesday">Wed</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Thursday">Thu</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Friday">Fri</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Saturday">Sat</label>
+              <label class="checkbox-pill"><input type="checkbox" name="days" value="Sunday">Sun</label>
+            </div>
+            <span class="field-error" id="err-days" role="alert"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="emergency">Emergency Contact <span class="opt">(optional)</span></label>
+            <input type="text" id="emergency" name="emergency" placeholder="Name and phone number">
+          </div>
+        </fieldset>
+
+        <div class="form-footer">
+          <p class="form-privacy">By submitting, you agree that your details will be used only for Accord Party Oyo State volunteer coordination.</p>
+          <button type="submit" class="btn btn--gold btn--wide" id="submit-btn">
+            <span class="btn-label">Submit Registration</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <p class="eyebrow reveal">On The Ground</p>
+      <h2 class="section-title reveal">Campaign gallery.</h2>
+      <p class="section-lead reveal">Moments from ward meetings, community outreach, and volunteer activities across Oyo State.</p>
+
+      <div class="gallery-grid">
+        <button class="gallery-item reveal" data-caption="Community outreach in Ibadan North">
+          <img src="images/gallery1.jpg" alt="Volunteers speaking with residents during a community outreach event" loading="lazy">
+          <span class="gallery-caption">Community Outreach</span>
+        </button>
+        <button class="gallery-item reveal" data-caption="Volunteer coordination meeting">
+          <img src="images/gallery2.jpg" alt="Volunteers gathered at a coordination meeting" loading="lazy">
+          <span class="gallery-caption">Volunteer Meeting</span>
+        </button>
+        <button class="gallery-item reveal" data-caption="Campaign rally moment">
+          <img src="images/hero.jpg" alt="Campaign banner and crowd at a rally" loading="lazy">
+          <span class="gallery-caption">Campaign Rally</span>
+        </button>
+        <button class="gallery-item reveal" data-caption="Ward-level town hall">
+          <img src="images/gallery1.jpg" alt="Town hall meeting with community elders" loading="lazy">
+          <span class="gallery-caption">Ward Town Hall</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--tint" id="contact">
+    <div class="container">
+      <p class="eyebrow reveal">Get In Touch</p>
+      <h2 class="section-title reveal">Contact the campaign office.</h2>
+
+      <div class="contact-grid">
+        <div class="contact-details reveal">
+          <ul class="contact-list">
+            <li><strong>Office:</strong> Accord Party Campaign Secretariat, Ring Road, Ibadan, Oyo State</li>
+            <li><strong>Phone:</strong> <a href="tel:+2348000000000">+234 800 000 0000</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@accordpartyoyo2027.org">info@accordpartyoyo2027.org</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/2348000000000" target="_blank" rel="noopener">Chat with us</a></li>
+          </ul>
+          <div class="social-row">
+            <a href="#" class="social-icon" aria-label="Facebook">f</a>
+            <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">x</a>
+            <a href="#" class="social-icon" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <iframe
+            title="Campaign office location map"
+            src="https://maps.google.com/maps?q=Ibadan,Oyo%20State&t=&z=12&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Accord Party emblem" width="36" height="36">
+      <p>Accord Party<br><span>Oyo State 2027</span></p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#candidates">Candidates</a>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow</h4>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+        <a href="#" class="social-icon" aria-label="Instagram">ig</a>
+        <a href="#" class="social-icon" aria-label="X (Twitter)">x</a>
+        <a href="#" class="social-icon" aria-label="YouTube">yt</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>&copy; 2027 Accord Party Oyo State Campaign. All rights reserved.</p>
+    <p class="footer-privacy">This site is for campaign information and volunteer registration only. It does not offer online voting or election results.</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+  <img src="" alt="" id="lightbox-img">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<!-- Success Modal -->
+<div class="modal" id="success-modal" aria-hidden="true" role="dialog" aria-label="Registration confirmation">
+  <div class="modal-panel">
+    <div class="modal-icon">&#10003;</div>
+    <h3>You're on the list!</h3>
+    <p>Thank you for registering as an Accord Party volunteer. A member of our team will reach out with next steps.</p>
+    <button class="btn btn--gold" id="modal-close">Done</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/email.js"></script>
+<script src="js/form.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
